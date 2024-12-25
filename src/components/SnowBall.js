@@ -1,3 +1,7 @@
+import "./SnowMan.js";
+// Ruta semi-absoluta
+/* import "@/components/SnowMan.js"; */
+
 class SnowBall extends HTMLElement {
     constructor() {
         super();
@@ -71,10 +75,12 @@ class SnowBall extends HTMLElement {
                     height: 100%;
                     background: #fff;
                 }
-                
             }
-            
-        
+
+            snow-man {
+                position: absolute;
+                left: calc(50% - calc(var(--snowman-width) / 2));
+            }
         `;
     }
 
@@ -90,16 +96,8 @@ class SnowBall extends HTMLElement {
                 <div class="surface-snow"></div>
                 <div class="snow"></div>
             </div>
+            <snow-man></snow-man>
         </div>
-        <h2>HTML Forms</h2>
-
-        <form action="/action_page.php">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
-            <input type="submit" value="Submit">
-        </form> 
         `;
     }
 }
