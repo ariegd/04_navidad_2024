@@ -80,6 +80,7 @@ class SnowBall extends HTMLElement {
             snow-man {
                 position: absolute;
                 left: calc(50% - calc(var(--snowman-width) / 2));
+                bottom: 15%;
             }
         `;
     }

@@ -8,7 +8,7 @@ class SnowMan extends HTMLElement {
         return /* css */`
             :host {
                 --snowman-width: var(--size) * 0.3;
-                --snowman-height: var(--size) * 0.8;
+                --snowman-height: var(--size) * 0.65;
             }
 
             .container {
