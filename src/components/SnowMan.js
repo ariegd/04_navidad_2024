@@ -13,7 +13,8 @@ class SnowMan extends HTMLElement {
 
             .container {
                 display: grid;
-                place-items: center end;
+                place-items: end center;
+                place-content: end center;
                 background: red;
                 width: calc(var(--snowman-width));
                 height: calc(var(--snowman-height));
@@ -23,14 +24,15 @@ class SnowMan extends HTMLElement {
                     background: #ffffff;
                     width: var(--size);
                     height: var(--size);
+                    border-radius: 50%; /*redondear el cuadrado*/
                 }
 
                 & .head {
-                    --size: 40px;
+                    --size: 90px;
                 }
 
                 & .body {
-                    --size: 80px;
+                    --size: 150px;
                 }
             }
         `;
