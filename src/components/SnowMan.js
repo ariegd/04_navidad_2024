@@ -25,14 +25,16 @@ class SnowMan extends HTMLElement {
                     width: var(--size);
                     height: var(--size);
                     border-radius: 50%; /*redondear el cuadrado*/
+                    box-shadow: -45px -25px 0 #dddefc inset;
                 }
 
                 & .head {
-                    --size: 90px;
+                    --size: 100px;
+                    /* transform: translateY(5px);  bajar la cabeza*/
                 }
 
                 & .body {
-                    --size: 150px;
+                    --size: 160px;
                 }
             }
         `;
