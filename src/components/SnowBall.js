@@ -32,15 +32,24 @@ class SnowBall extends HTMLElement {
                 display: grid;
                 justify-items: center;
                 height: var(--snow-size);
+                transform-origin: 50% 100%;
+                transition: transform 0.5s;
+
+                &:hover {
+                    transform: translate(70px, 0) rotate(-15deg);
+                }
 
                 & .surface-snow {
                     --surface-height: 30px;
-                    width: 88%;
+                    --offset-y: calc(calc(var(--surface-height)/2) * -1);
+
+                    width: 87%;
                     height: var(--surface-height);
                     border-radius: 50%;
                     background: #cccccc;
                     position: absolute;
-                    transform: translateY(-15px);
+                    /* transform: translateY(-15px); */
+                    transform: translateY(var(--offset-y));
                 }
 
                 & .snow {
