@@ -24,6 +24,19 @@ class SnowBall extends HTMLElement {
                 align-items: end;
                 overflow: hidden;
                 position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+                   /*  background: transparent; */
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    border-right: 25px solid #0004;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    transform: rotate(35def);
+                }
             }
 
             .snow-container {
@@ -35,9 +48,10 @@ class SnowBall extends HTMLElement {
                 transform-origin: 50% 100%;
                 transition: transform 0.5s;
 
-                &:hover {
+             /*    &:hover {
                     transform: translate(70px, 0) rotate(-15deg);
-                }
+                    transform: translate(-70px, 0) rotate(15deg);
+                } */
 
                 & .surface-snow {
                     --surface-height: 30px;
