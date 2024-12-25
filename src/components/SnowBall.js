@@ -36,7 +36,7 @@ class SnowBall extends HTMLElement {
                     width: 100%;
                     height: 100%;
                     position: absolute;
-                    border-right: 25px solid #fffa;
+                    border-right: 25px solid #cccccc;
                     box-sizing: border-box;
                     border-radius: 50%;
                     transform: rotate(-42deg);
@@ -58,13 +58,13 @@ class SnowBall extends HTMLElement {
                 } */
 
                 & .surface-snow {
-                    --surface-height: 30px;
+                    --surface-height: 50px;
                     --offset-y: calc(calc(var(--surface-height)/2) * -1);
 
                     width: 87%;
                     height: var(--surface-height);
                     border-radius: 50%;
-                    background: #cccccc;
+                    background: #fff;
                     position: absolute;
                     /* transform: translateY(-15px); */
                     transform: translateY(var(--offset-y));
@@ -73,14 +73,14 @@ class SnowBall extends HTMLElement {
                 & .snow {
                     width: 100%;
                     height: 100%;
-                    background: #fff;
+                    background: #ddd;
                 }
             }
 
             snow-man {
                 position: absolute;
                 left: calc(50% - calc(var(--snowman-width) / 2));
-                bottom: 15%;
+                bottom: 24%;
             }
         `;
     }

@@ -15,7 +15,7 @@ class SnowMan extends HTMLElement {
                 display: grid;
                 place-items: end center;
                 place-content: end center;
-                background: red;
+                /* background: red; */
                 width: calc(var(--snowman-width));
                 height: calc(var(--snowman-height));
 
@@ -25,16 +25,29 @@ class SnowMan extends HTMLElement {
                     width: var(--size);
                     height: var(--size);
                     border-radius: 50%; /*redondear el cuadrado*/
-                    box-shadow: -45px -25px 0 #dddefc inset;
+                    box-shadow: -30px -5px 0 #0000ff15 inset;
                 }
 
                 & .head {
                     --size: 100px;
-                    /* transform: translateY(5px);  bajar la cabeza*/
+                    transform: translateY(3px);  /* bajar la cabeza*/
                 }
 
                 & .body {
                     --size: 160px;
+                    z-index: 5;
+
+                    &::after {
+                        content: "";
+                        height: 10px;
+                        width: 50%;
+                        left: 25%;
+                        border-radius: 50%;
+                        background: #0002;
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                    }
                 }
             }
         `;
