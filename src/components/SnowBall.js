@@ -32,10 +32,10 @@ class SnowBall extends HTMLElement {
                     width: 100%;
                     height: 100%;
                     position: absolute;
-                    border-right: 25px solid #0004;
+                    border-right: 25px solid #fff6;
                     box-sizing: border-box;
                     border-radius: 50%;
-                    transform: rotate(35def);
+                    transform: rotate(-35deg);
                 }
             }
 
